@@ -29,13 +29,11 @@ public class ChatBot {
         for(int j = 0;j<=2;j++){
             System.out.println("A little test: \n1) 2+2=?  \n1.3 2.4 3.5" );
             int answer = scanner.nextInt();
-            if(answer != 2){
-                System.out.println("Please, try again");
-                continue;
-            }else if(answer == 2){
+            if(answer == 2){
                 System.out.println("Great, you right!");
                 System.out.println("Goodbye, have a nice day!");
-                break;
+            }else{
+                System.out.println("Please, try again");
             }
         }
 
